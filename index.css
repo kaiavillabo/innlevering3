@@ -1,0 +1,134 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+#game-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    background-image: url(bilder/bakgrunn.jpg);
+
+}
+
+#basket {
+    position: absolute;
+    bottom: 20px;
+    left: calc(50% - 50px);
+    width: 100px;
+    height: 50px;
+    background-color: rgb(104, 81, 33);
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.apple {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('https://emojicdn.elk.sh/🍎');
+    background-size: cover;
+}
+
+.green-apple {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-image: url('https://emojicdn.elk.sh/🍏');
+    background-size: cover;
+}
+
+#score {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 24px;
+}
+
+#start-button-container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    border: solid 10px rgb(151, 140, 107);
+    border-radius: 5px;
+    padding: 30px;
+    background-color: rgba(151, 140, 107, 0.634);
+}
+
+#start-button {
+    padding: 15px 30px;
+    font-size: 24px;
+    background-color: #4CAF50;
+    color: white;
+    border: solid 5px #3f7d40a1;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#start-button:hover {
+    background-color: #45a049;
+}
+
+#instructions {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+#hearts {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.heart {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    background-image: url('https://emojicdn.elk.sh/❤️');
+    background-size: cover;
+    margin-right: 5px;
+}
+
+.empty-heart {
+    background-image: url('https://emojicdn.elk.sh/🖤');
+}
+
+#game-over-message {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    color: red;
+    display: none;
+    text-align: center;
+    border: solid 10px rgb(151, 140, 107);
+    border-radius: 5px;
+    padding: 30px;
+    background-color: rgba(151, 140, 107, 0.634);
+    font-weight: bold;
+    font-size: 30px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.691);
+}
+
+#retry-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #ff0000;
+    color: #ffffff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border: solid 5px #c60707e5;
+
+}
+
+#retry-button:hover {
+    background-color: rgba(234, 8, 8, 0.838);
+}
